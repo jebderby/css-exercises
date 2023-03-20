@@ -12,17 +12,17 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-  padding: 8px;
-  display:flex;  
-  align-items: center;
-  justify-content: space-between; 
-}
-
-.left-items, .right-links {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
+  justify-content: space-between;
+  }
+
+.links {
+  display: flex;
+
+  gap: 8px;
+  margin: 8px;}
+
 
 .profile-image {
   background: rebeccapurple;
@@ -32,12 +32,31 @@ body {
   height: 48px;
 }
 
+.left {
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+
+
+.right {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-right: 16px;
+ }
+
+
+
 .logo {
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
-}
+  margin-left: 16px;
+  }
 
 button {
   border: none;
@@ -45,7 +64,7 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
-}
+ }
 
 a {
   /* this removes the line under our links */
@@ -55,6 +74,4 @@ a {
 
 ul {
   list-style-type: none;
-  display: flex;
-  gap: 16px;
 }
